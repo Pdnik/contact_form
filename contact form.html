@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <!-- CDN Development (always latest) -->
+
+    <title>contact form</title>
+    
+</head>
+
+<style>
+    body
+    {
+        background: linear-gradient(rgb(124, 200, 222),black )
+
+    }
+.contact1{
+    transform: translateY(-100px);
+    transition:0.5s;
+}
+.contact2{
+    transform: translateY(-100px); transition: 0.5s;
+}
+.input{
+transform: translateX(-100px); transition: 0.8s;
+}
+.footer
+{
+    transform: translateY(1000px); transition: 1s;
+}
+.image{
+    transform: translateY(1000px); transition: 1s;
+}
+</style>
+<div class="contact1" style="color:black;text-decoration:underline;text-shadow: 2px 2px 8px white ;background-size: cover;text-align: center; margin:50px"> <h1> CONTACT FORM </h1></div> 
+<body>
+    <div class="contact2" style="text-align:center; text-shadow: 2px 2px 8px white; text-decoration: underline;"><h2>Contact Details</h2></div>
+    <div class="input"style="    padding: 125px;
+    padding-left: 286px ;">
+    <form action="contact.php" method="POST">
+        <input type="text", name="name" placeholder="Name" required> </input> <hr>  
+        Please select your gender: <hr>
+  <input type="radio" id="gen1" name="gender" required> 
+  <label for="gen1">Male</label><hr>
+  <input type="radio" id="gen2" name="gender" required>
+  <label for="gen2">Female</label><hr>  
+  
+        <input type="text", name="cno" placeholder="number" required> </input> <hr> 
+        <input type="email", name="mail" placeholder="mail-id"></input> <hr> 
+        <!-- <input type="password" required placeholder="enter password"> -->
+        <input type="submit" value="Submit">
+        
+
+    </form>
+    <br> <br> <br> <br>
+<span class="footer" style="  color:aliceblue; text-align:center ;text-shadow: 2px 2px 8px black; margin-top: 250px; "><h2>Contact Us:</h2></span>
+<span class="image" style="margin-left:155px" ><a href="https://wa.link/iroeu4"><img src="https://logodownload.org/wp-content/uploads/2015/04/Whatsapp-logo-vetor.png;"style="height: 100px; width:100px;"> <hr> </a><a href="mailto:nikhilpd.99@gmail.com"><img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" style=" margin-left: 130px; height: 60px; width:100px;"></a></span>
+
+    </div>
+</body>
+
+
+
+<script>
+    var n1=document.querySelector(".contact1");
+    var n5=document.querySelector(".contact2");
+    var n2=document.querySelector(".input");
+    var n3=document.querySelector(".footer");
+    var n4=document.querySelector(".image");
+    window.addEventListener("load",function(){
+        n1.style.transform="translateY(0)";
+        n2.style.transform="translateX(0)";
+        n3.style.transform="translateY(0)";
+        n4.style.transform="translateY(0)";
+        n5.style.transform="translateY(0)";
+    }
+    )
+    
+</script>
+
+</html>
